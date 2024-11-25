@@ -36,13 +36,16 @@ const MobileNav = ({
   const pathname = usePathname();
   return (
     <header className="mobile-header">
-      <Image
-        src={"/assets/icons/logo-full-brand.svg"}
-        alt="logo"
-        width={120}
-        height={52}
-        className="h-auto"
-      />
+      <div className="flex items-center">
+        <Image
+          src={"/cloud.png"}
+          alt="logo"
+          width={45}
+          height={45}
+          className=""
+        />
+        <span className="text-sm p-4 w-full">CLOUDUP</span>
+      </div>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>
           <Image
@@ -72,7 +75,12 @@ const MobileNav = ({
           <nav className="mobile-nav">
             <ul className="mobile-nav-list">
               {navItems.map(({ url, name, icon }) => (
-                <Link key={name} href={url} className="lg:w-full">
+                <Link
+                  key={name}
+                  href={url}
+                  className="lg:w-full"
+                  onClick={() => setOpen(false)}
+                >
                   <li
                     className={cn(
                       "mobile-nav-item",
@@ -99,8 +107,12 @@ const MobileNav = ({
           <Separator className="my-5 bg-light-300" />
 
           <div className="flex flex-col justify-between gap-5 pb-5">
-            <FileUploader ownerId={ownerId} accountId={accountId}/>
-            <Button type="submit" className="mobile-sign-out-button" onClick={async () => await signOutUser()}>
+            <FileUploader ownerId={ownerId} accountId={accountId} />
+            <Button
+              type="submit"
+              className="mobile-sign-out-button"
+              onClick={async () => await signOutUser()}
+            >
               <Image
                 src={"/assets/icons/exit.png"}
                 alt="logout"
