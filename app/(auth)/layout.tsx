@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <div className="space-y-4">
             <p className="h2">Optimized file management</p>
             <p className="text-lg">
-              Awesome, we've created the perfect place for you to store all your
+              Awesome, we&apos;ve created the perfect place for you to store all your
               documents
             </p>
           </div>

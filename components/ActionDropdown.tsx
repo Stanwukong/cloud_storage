@@ -185,8 +185,9 @@ const ActionDropdown = ({ file }: ActionDropdownProps) => {
                   ["rename", "share", "delete", "details"].includes(
                     actionItem.value
                   )
-                )
-                  [setIsModalOpen(true)];
+                ) {
+                  setIsModalOpen(true);
+                }
               }}
             >
               {actionItem.value === "download" ? (

@@ -17,7 +17,7 @@ type FileUploaderProps = {
   className?: string;
 };
 
-const FileUploader = ({ ownerId, accountId, className }: FileUploaderProps) => {
+const FileUploader = ({ ownerId, accountId }: FileUploaderProps) => {
   const { toast } = useToast();
   const path = usePathname();
   const [files, setFiles] = useState<File[]>([]);

@@ -58,6 +58,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
 
       setAccountId(user.accountId);
     } catch (error) {
+      console.log(error);
       setErrorMessage(
         type === "sign-up"
           ? "Failed to create account. Please try again."
