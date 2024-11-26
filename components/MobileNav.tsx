@@ -44,7 +44,7 @@ const MobileNav = ({
           height={45}
           className=""
         />
-        <span className="text-sm p-4 w-full">CLOUDUP</span>
+        <span className="text-sm p-4 w-full">CLOUDIFY</span>
       </div>
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger>

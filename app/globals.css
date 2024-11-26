@@ -111,7 +111,7 @@
 
   /* =====  SHADCN OVERRIDES */
   .shad-no-focus {
-    @apply outline-none ring-offset-transparent focus:ring-transparent focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
+    @apply p-3 hover:bg-gray-100 rounded-md outline-none ring-offset-transparent focus:ring-transparent focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
   }
   .shad-input {
     @apply border-none shadow-none p-0 shad-no-focus placeholder:text-light-400 body-2 !important;
@@ -171,7 +171,7 @@
 
   /* Root Layout */
   .main-content {
-    @apply remove-scrollbar h-full flex-1 overflow-auto bg-gray-100 px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
+    @apply remove-scrollbar h-full flex-1 overflow-auto bg-gray-100 px-5 py-7 sm:mr-7 sm:rounded-md md:mb-7 md:px-9 md:py-10 !important;
   }
 
   /* Dashboard */
@@ -185,7 +185,7 @@
     @apply relative mt-6 rounded-[20px] bg-white p-5 transition-all hover:scale-105 !important;
   }
   .summary-type-icon {
-    @apply absolute -left-3 top-[-8px] z-10 w-[190px] object-contain !important;
+    @apply absolute -left-3 top-[-25px] z-10 w-[190px] object-contain !important;
   }
   .summary-type-size {
     @apply h4 relative z-20 w-full text-right !important;
@@ -200,7 +200,7 @@
     @apply flex w-full justify-between items-center !important;
   }
   .recent-file-name {
-    @apply subtitle-2 line-clamp-1 w-full text-light-100 sm:max-w-[200px] lg:max-w-[250px] !important;
+    @apply subtitle-2 line-clamp-1 w-full text-light-500 sm:max-w-[200px] lg:max-w-[250px] !important;
   }
   .recent-file-date {
     @apply body-2 text-light-100/80 !important;
@@ -371,7 +371,7 @@
     @apply relative w-full md:max-w-[480px] !important;
   }
   .search-input-wrapper {
-    @apply flex h-[52px] flex-1 items-center gap-3 rounded-full px-4 shadow-drop-3 !important;
+    @apply flex h-[52px] flex-1 items-center gap-3 rounded-md px-4 shadow-drop-3 !important;
   }
   .search-input {
     @apply body-2 shad-no-focus  placeholder:body-1 w-full border-none p-0 shadow-none placeholder:text-light-200 !important;
@@ -401,7 +401,7 @@
   }
 
   .shad-active {
-    @apply bg-black text-white shadow-drop-2 !important;
+    @apply bg-black text-white hover:bg-black/80 shadow-drop-2 !important;
   }
 
   /* Sort */

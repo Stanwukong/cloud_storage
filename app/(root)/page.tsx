@@ -34,8 +34,8 @@ export default async function Home() {
                 <div className="flex justify-between gap-3">
                   <Image
                     src={summary.icon}
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
                     alt="uploaded image"
                     className="summary-type-icon"
                   />
@@ -45,7 +45,8 @@ export default async function Home() {
                 </div>
 
                 <h5 className="summary-type-title">{summary.title}</h5>
-                <Separator className="bg-light-400" />
+                <Separator className="bg-gray-200" />
+                <p className="text-center text-light-400">Last updated</p>
                 <FormattedDateTime
                   date={summary.latestDate}
                   className="text-center"
@@ -58,7 +59,7 @@ export default async function Home() {
 
       {/* Recent files uploaded */}
       <section className="dashboard-recent-files">
-        <h2 className="h3 xl:h2 text-light-100">Recent files uploaded</h2>
+        <h2 className="h3 xl:h2 text-neutral-800">Recent files uploaded</h2>
         {files.documents.length > 0 ? (
           <ul className="mt-5 flex flex-col gap-5">
             {files.documents.map((file: Models.Document) => (

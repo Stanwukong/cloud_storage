@@ -142,7 +142,7 @@ const ActionDropdown = ({ file }: ActionDropdownProps) => {
               Cancel
             </Button>
             <Button onClick={handleAction} className="modal-submit-button">
-              <p className="capitaliza">{value}</p>
+              <p className="capitalize">{value}</p>
             </Button>
             {isLoading && (
               <Image
@@ -163,7 +163,7 @@ const ActionDropdown = ({ file }: ActionDropdownProps) => {
       <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
         <DropdownMenuTrigger className="shad-no-focus">
           <Image
-            src={"/assets/icons/dots.svg"}
+            src={"/assets/icons/dots.png"}
             alt="dots"
             width={34}
             height={34}

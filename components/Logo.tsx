@@ -12,7 +12,7 @@ const Logo = () => {
         className=""
       />
       <span className=" p-4 w-full">
-        CLOUDUP
+        CLOUDIFY
       </span>
     </div>
   );

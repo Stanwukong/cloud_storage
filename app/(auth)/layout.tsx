@@ -5,7 +5,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <div className="flex h-screen">
       <section className="bg-black w-full hidden flex-col text-white items-center justify-center lg:flex">
         <div className="space-y-8">
-          <span className="h1">CLOUD UP</span>
+          <span className="h1">CLOUDIFY</span>
           <div className="space-y-4">
             <p className="h2">Optimized file management</p>
             <p className="text-lg">
